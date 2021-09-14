@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", movies = callMoveApi(), temp = todayTemp())
+    return render_template("index.html", movies = callMoveApi(), today_temp = todayTemp())
 
 if __name__ == "__main__":
     app.run(debug=True)

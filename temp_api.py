@@ -11,5 +11,5 @@ def todayTemp():
     if(response.status_code ==200):
         soup = BeautifulSoup(response.text, 'html.parser')
         tarket = soup.select_one("#main_pack .todaytemp")
-        temp = { 'today_temp' : tarket.text }
-    return temp
+        today_temp = { 'temp' : tarket.text }
+    return today_temp
