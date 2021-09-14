@@ -35,11 +35,7 @@
               <td><img src="{{movie['small_cover_image']}}"></td>
               <td>{{ movie["title"]}}</td>
               <td>{{ movie["rating"]}}</td>
-              {% if movie["summary"]|length > 200  %}
-                <td>{{ movie["summary"][:199]}}...</td>
-              {% else %}
-                <td>{{ movie["summary"]}}</td>
-              {% endif %}
+              <td>{{ movie["summary"]}}</td>
             </tr>
           </tbody>
         <!-- 영화 끝 -->
